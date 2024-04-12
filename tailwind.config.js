@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
 		backgroundImage: {
-			'footer-pattern': "url('footer bg.png')"
+			'footer-pattern': "url('/footer bg.png')"
 		}
 	},
   },

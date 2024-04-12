@@ -3,26 +3,35 @@ import { Parallax } from 'react-scroll-parallax'
 
 import { parallaxSpeed } from '@shared/config'
 
+import BitcoinImg from '/Bitcoin.svg'
+import CardanoImg from '/Cardano Coin.svg'
+import EthereumImg from '/Ethereum Coin.svg'
+import coinImg from '/coin-icon.png'
+import securityIcon from '/security-safe.svg'
+import cardanoBlockchain from '/cardano-blockchain 1.jpg'
+import holdingBitcoinImg from '/view-hand-holding-bitcoin 1.jpg'
+import tradeIcon from '/trade.svg'
+
 const Home = () => {
 	return (
 		<>
 			<Parallax speed={parallaxSpeed}>
 				<img
-					src='Bitcoin.svg'
+					src={BitcoinImg}
 					alt=''
 					className='absolute -z-10 left-0 top-full translate-y-1/2'
 				/>
 			</Parallax>
 			<Parallax speed={parallaxSpeed}>
 				<img
-					src='Cardano Coin.svg'
+					src={CardanoImg}
 					alt=''
 					className='absolute -z-10 top-0 left-1/2 -translate-x-1/2 -translate-y-1/4'
 				/>
 			</Parallax>
 			<Parallax speed={parallaxSpeed}>
 				<img
-					src='Ethereum Coin.svg'
+					src={EthereumImg}
 					alt=''
 					className='absolute -z-10 right-0 top-full translate-y-1/2'
 				/>
@@ -84,7 +93,7 @@ const Home = () => {
 					to='get-started'
 					className='bg-white color-black flex w-fit rounded-2xl mx-auto text-black items-center px-4 text-xl gap-x-1 mt-16'
 				>
-					Get started <img src='coin-icon.png' alt='coin icon' />
+					Get started <img src={coinImg} alt='coin icon' />
 				</Link>
 			</section>
 
@@ -94,7 +103,7 @@ const Home = () => {
 						<h2 className='text-4xl font-bold'>
 							Secure Transactions:
 							<img
-								src='security-safe.svg'
+								src={securityIcon}
 								alt='security icon'
 								className='inline-block'
 							/>
@@ -109,7 +118,7 @@ const Home = () => {
 					</div>
 					<div className='p-1 bg-[#d9d9d92a] rounded'>
 						<img
-							src='cardano-blockchain 1.jpg'
+							src={cardanoBlockchain}
 							alt=''
 							className='rounded'
 						/>
@@ -118,7 +127,7 @@ const Home = () => {
 				<article className='grid grid-cols-subgrid col-span-full row-span-1'>
 					<div className='p-1 bg-[#d9d9d92a] rounded'>
 						<img
-							src='view-hand-holding-bitcoin 1.jpg'
+							src={holdingBitcoinImg}
 							alt=''
 							className='rounded'
 						/>
@@ -127,7 +136,7 @@ const Home = () => {
 						<h2 className='text-4xl font-light'>
 							Convenient Trading:
 							<img
-								src='trade.svg'
+								src={tradeIcon}
 								alt='trade icon'
 								className='inline-block ml-10'
 							/>

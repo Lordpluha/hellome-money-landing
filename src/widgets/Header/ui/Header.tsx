@@ -2,11 +2,13 @@ import { NavLink } from 'react-router-dom'
 
 import { LoginBtn, SignUpBtn } from '@features/Auth'
 
+import logo from '/logo.svg'
+
 const Header = () => {
 	return (
 		<header className='sticky flex w-full px-16 py-3 justify-center flex-row items-center'>
 			<NavLink to={'/'} className='mr-auto'>
-				<img src='logo.svg' alt='logo' />
+				<img src={logo} alt='logo' />
 			</NavLink>
 			<nav>
 				<ul className='flex gap-x-12'>
