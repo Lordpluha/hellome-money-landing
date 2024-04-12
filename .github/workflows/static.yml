@@ -32,7 +32,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Build project
-        run: yarn
+        run: |
+          yarn
           yarn build
       - name: Setup Pages
         uses: actions/configure-pages@v5
