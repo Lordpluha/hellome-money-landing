@@ -18,5 +18,5 @@ export default defineConfig({
 		}
 	},
 	plugins: [react(), tsconfigPaths()],
-	base: '/'
+	base: '/<REPO>/'
 })
