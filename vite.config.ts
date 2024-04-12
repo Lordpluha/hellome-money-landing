@@ -18,5 +18,5 @@ export default defineConfig({
 		}
 	},
 	plugins: [react(), tsconfigPaths()],
-	base: '/hello-money-landing/'
+	base: '/'
 })
