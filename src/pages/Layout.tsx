@@ -1,15 +1,14 @@
 import { Suspense } from 'react'
 import { Outlet } from 'react-router-dom'
 
-import Header from '@widgets/Header'
-
 import { Footer } from '@widgets/Footer'
+import Header from '@widgets/Header'
 
 const Layout = () => {
 	return (
 		<div className='flex flex-col justify-between min-h-screen'>
 			<Header />
-			<main className="px-16">
+			<main className='px-16'>
 				<Suspense fallback={<h1>Loading...</h1>}>
 					<Outlet />
 				</Suspense>

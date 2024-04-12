@@ -1,10 +1,12 @@
-import { useRouteError } from "react-router-dom";
+import { useRouteError } from 'react-router-dom'
 
 const Error = () => {
-	const error = useRouteError();
+	const error = useRouteError()
 	console.error(error)
 	return (
-		<div className="flex justify-center align-center">Error. Info in console</div>
+		<div className='flex justify-center align-center'>
+			Error. Info in console
+		</div>
 	)
 }
 

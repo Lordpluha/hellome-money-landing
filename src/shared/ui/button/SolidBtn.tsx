@@ -1,7 +1,5 @@
 const SolidBtn = () => {
-  return (
-	<button>Button</button>
-  )
+	return <button>Button</button>
 }
 
 export default SolidBtn
